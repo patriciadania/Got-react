@@ -39,3 +39,23 @@
   height: 98px;
   margin-right: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 200px;
+    height: 49px;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+}
+
+

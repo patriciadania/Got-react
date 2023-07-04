@@ -10,11 +10,11 @@ const Header = () => {
       <nav>
         <ul className="menu">
       
-          <Link to="/" className="logo-link">
+          <Link to="/characters" className="logo-link">
             <img src={Logo} alt="Logo" className="logo" />
           </Link>
 
-          <li className="menu-item"><Link to="/characters" className="link">Personagens</Link></li>
+         
           <li className="menu-item"><Link to="/trailer" className="link">Trailer</Link></li>
           <li className="menu-item"><a href="https://www.hbo.com/game-of-thrones" className="link">Saiba Mais</a></li>
         </ul>

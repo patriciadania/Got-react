@@ -1,6 +1,8 @@
 import React from 'react';
+import YouTube from 'react-youtube';
+import './Trailer.css';
 
-const HomePage = () => {
+const Trailer = () => {
   const divStyle = {
     backgroundImage: "url('/got.jpg')",
     backgroundSize: 'cover',
@@ -8,13 +10,16 @@ const HomePage = () => {
     backgroundPosition: 'center',
     minHeight: '100vh',
   };
+  const videoId = 'KPLWWIOCOOQ';
 
   return (
     <div style={divStyle}>
-      <h1>Bem-vindo à Página Inicial</h1>
-      <p>Esta é a página inicial do seu aplicativo.</p>
+      <div className="trailer-container">
+      <YouTube videoId={videoId} className="trailer-video" />
+    </div>
+      
     </div>
   );
 };
 
-export default HomePage;
+export default Trailer;

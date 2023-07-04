@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './CharacterList.css';
-import characterData from './got.json'; 
+import characterData from './got.json';
 import { searchCharacters } from '../SearchCharacters/SearchCharacter';
 import SortOptions from '../SortOptions/SortOptions';
-import { Link } from 'react-router-dom';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
@@ -11,7 +10,7 @@ const CharacterList = () => {
   const [currentPage, setCurrentPage] = useState(null);
 
   useEffect(() => {
-    setCharacters(characterData.got); 
+    setCharacters(characterData.got);
   }, []);
 
   const handleSearch = () => {
@@ -38,7 +37,7 @@ const CharacterList = () => {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      event.preventDefault(); 
+      event.preventDefault();
       handleSearch();
     }
   };
@@ -69,33 +68,33 @@ const CharacterList = () => {
         </form>
       </div>
       <SortOptions handleSort={handleSort} />
-      <h2>Lista de Personagens</h2>
+      <div className='texto'>
+        <h2>Conheça os Personagens</h2></div>
+
       {currentPage === null ? (
         <div className="card-container">
           {characters.map((character) => (
-            <Link key={character.id} to={`/characters/${character.id}`} className="card-link">
-              <div className="card">
-                <div className="card-inner">
-                  <div className="card-front">
-                    <img src={character.imageUrl} alt={character.fullName} />
-                    <h3>{character.fullName}</h3>
-                  </div>
-                  <div className="card-back">
-                    <p>
-                      <strong>Título:</strong> {character.title}
-                    </p>
-                    <p>
-                      <strong>Família: </strong>
-                      {character.family}
-                    </p>
-                    <p>
-                      <strong>Nascido em: </strong>
-                      {character.born}
-                    </p>
-                  </div>
+            <div key={character.id} className="card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <img src={character.imageUrl} alt={character.fullName} />
+                  <h3>{character.fullName}</h3>
+                </div>
+                <div className="card-back">
+                  <p>
+                    <strong>Título:</strong> {character.title}
+                  </p>
+                  <p>
+                    <strong>Família: </strong>
+                    {character.family}
+                  </p>
+                  <p>
+                    <strong>Nascido em: </strong>
+                    {character.born}
+                  </p>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       ) : (

@@ -1,0 +1,12 @@
+.trailer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .trailer-video {
+    width: 640px;
+    height: 360px;
+  }
+  

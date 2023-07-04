@@ -1,11 +1,13 @@
 .sort-options {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  
-  .sort-select {
-    padding: 6px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.sort-select {
+  padding: 6px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}

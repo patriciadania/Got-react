@@ -11,3 +11,14 @@
   border: 2px solid #ccc;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .sort-options {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-top: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+}

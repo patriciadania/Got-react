@@ -44,6 +44,7 @@ const CharacterList = () => {
 
   return (
     <div className="character-list">
+      
       <div className="search-container">
         <form className="form">
           <button>

@@ -189,6 +189,14 @@ input:not(:placeholder-shown) ~ .reset {
 .form svg {
   width: 17px;
   margin-top: 3px;
+  
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
 }
 @media (max-width: 768px) {
   .form {

@@ -6,12 +6,15 @@ import CharactersPage from './pages/CharactersPage';
 import './App.css'; 
 import Trailer from './pages/Trailer';
 
+
 function App() {
+  
   return (
     <Router>
       <div className="app">
         <Header />
         <Routes>
+       
           <Route path="/" element={<CharactersPage />} />
           <Route path="/trailer" element={<Trailer />} />
         </Routes>

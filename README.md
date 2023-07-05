@@ -1,4 +1,4 @@
-# Game Of Thrones 
+# Game Of Thrones - React
 A Guerra dos Tronos: Um projeto React que oferece informações sobre os personagens da série, incluindo nome, título, imagem, família, ano de nascimento e morte. Explore a lista de personagens, descubra os laços familiares e mergulhe na épica batalha pelo Trono de Ferro nos Sete Reinos.
 
 
